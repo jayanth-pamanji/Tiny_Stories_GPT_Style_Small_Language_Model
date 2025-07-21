@@ -19,9 +19,9 @@ A lightweight Transformer-based language model trained on the TinyStories datase
 * **Model Type:** GPT-like Decoder-only Transformer
 * **Layers:** 6
 * **Hidden Size:** 256
-* **Attention Heads:** 4
+* **Attention Heads:** 6
 * **Vocabulary Size:** 50257 (tokenized using GPT2 tokenizer)
-* **Context Length:** 128
+* **Context Length:** 384
 * **Parameters:** \~20M
 
 > You can modify these values to match your actual architecture if different.
@@ -49,16 +49,10 @@ A lightweight Transformer-based language model trained on the TinyStories datase
 * **Learning Rate:** 5e-4 with linear warmup
 * **Optimizer:** AdamW
 * **Scheduler:** Cosine Annealing
-* **Epochs:** 10
-* **Hardware:** NVIDIA RTX 3090 (or specify your GPU)
+* **Epochs:** 20000
 
----
 
-## 🧪 Evaluation
 
-* **Perplexity:** \~12.3 on validation set
-* **BLEU Score:** 14.7 (optional)
-* **Generated Examples:**
 
 ```
 A little girl went to the woods and she found a basket for her. In one he enjoyed the great basket and the tasty treats tall. Then, she decided to go home and the picnic.
